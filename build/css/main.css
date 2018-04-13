@@ -1,0 +1,53 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
+
+/*
+---
+name: Button
+category: Components
+---
+
+Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="cp-button">Default</button>
+<button class="cp-button cp-button--secondary">Secondary</button>
+<button class="cp-button cp-button--disabled">Disabled</button>
+```
+*/
+.cp-button {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  margin-left: 10px;
+  padding: 0 20px;
+  background-color: #e2001a;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.333em;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: 0; }
+  .cp-button--secondary {
+    border: 1px solid #e2001a;
+    background-color: transparent;
+    color: #e2001a; }
+  .cp-button--small {
+    font-size: 0.875em;
+    line-height: 2.2;
+    padding: 0 12px; }
+  .cp-button--disabled {
+    background: #e9e9e9;
+    cursor: not-allowed; }

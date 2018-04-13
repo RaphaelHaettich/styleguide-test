@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-us" id="insta">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="_stylemark/css/all.css" rel="stylesheet">
+		<link rel="icon" href="{{favicon}}" type="image/x-icon">
+
+		<!-- @todo Replace with custom icomoon/fontello bundle -->
+		<script src="https://use.fontawesome.com/6dd56ad32d.js"></script>
+
+		<title>{{name}}</title>
+	</head>
+	<body class="overflow-x-off i-page">
+		<div class="i-page__content">
+
+			<div class="i-nav-select">
+				<form class="form">
+					<select class="form-control form-control-lg">
+						<option disabled selected>Go to…</option>
+						{{#each groups}}
+							<optgroup label="{{key}}">
+								{{#each docs}}
+									<option value="{{slug}}">{{{name}}}</option>
+								{{/each}}
+							</optgroup>
+						{{/each}}
+					</select>
+				</form>
+			</div>
+
+			{{#each groups}}
+				<div id="category-{{slug}}">
+					{{#each docs}}
+						{{{html}}}
+					{{/each}}
+				</div>
+			{{/each}}
+		</div>
+		<div
+			class="i-page__sidebar"
+			style="
+				background: {{or sidebar.background "#0b7564"}};
+				color: {{or sidebar.textColor "#fff"}};
+			"
+		>
+			{{> sidebar}}
+		</div>
+
+		<script src="_stylemark/js/vendor/jquery-3.2.1.slim.min.js"></script>
+		<script src="_stylemark/js/vendor/popper.min.js"></script>
+		<script src="_stylemark/js/vendor/tether.min.js"></script>
+		<script src="_stylemark/js/vendor/bootstrap.min.js"></script>
+		<script src="_stylemark/js/vendor/iframeResizer.min.js"></script>
+		<script src="_stylemark/js/vendor/lazyframe.min.js"></script>
+		<script src="_stylemark/js/vendor/highlight.min.js"></script>
+		<script src="_stylemark/js/vendor/clipboard.min.js"></script>
+		<script src="_stylemark/js/app.js"></script>
+	</body>
+</html>
