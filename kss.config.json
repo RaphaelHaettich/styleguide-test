@@ -1,8 +1,0 @@
-{
-  "title": "Brack.CH Styleguide",
-  "source": "src/scss/",
-  "destination": "styleguide/",
-  "css": [
-    "build/css/main.css"
-  ]
-}
