@@ -1,7 +1,7 @@
 const libxslt = require('libxslt');
 const fs = require('fs');
 
-const stylesheetString = fs.readFileSync('src/xsl/components/SearchBox.xsl', 'utf8');
+const stylesheetString = fs.readFileSync('src/xsl/components/Button.xsl', 'utf8');
 
 const documentString = '<div />';
 
@@ -11,7 +11,7 @@ const result = stylesheet.apply(documentString);
 
 console.log(result);
 
-fs.writeFile("styleguide/build/html/searchBox.html", result, function(err) {
+fs.writeFile("build/html/button.html", result, function(err) {
     if(err) {
         return console.log(err);
     }

@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass src/scss/main.scss -o styleguide/build/css/",
-    "scss-watch": "node-sass -w src/scss/main.scss -o styleguide/build/css/"
+    "scss": "node-sass src/scss/main.scss -o build/css/",
+    "scss-watch": "node-sass -w src/scss/main.scss -o build/css/"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fs": "0.0.1-security",
     "libxslt": "^0.7.0",
-    "node-sass": "^4.8.3"
+    "node-sass": "^4.8.3",
+    "stylemark": "^0.6.7",
+    "yargs": "^11.0.0"
   }
 }

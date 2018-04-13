@@ -1,14 +1,23 @@
-// Buttons
-//
-// Various button styles.
-//
-// Markup: ../../../styleguide/build/html/button.html
-//
-// .cp-button--secondary - Secondary Button.
-// .cp-button--small - Small Button.
-// .cp-button--disabled - Button disabled.
-//
-// Styleguide Components.button
+/*
+---
+name: Button
+category: Components
+---
+
+Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```button: /build/html/button.html
+```
+
+```button.html
+```
+
+*/
 
 .cp-button {
   display: inline-block;
