@@ -1,0 +1,64 @@
+/*
+Error: $color: 'color("materialize-red", "lighten-2")' is not a color for `lighten'
+        on line 38 of _variables.scss
+        from line 1 of main.scss
+
+Backtrace:
+_variables.scss:38
+main.scss:1
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:310:in `reformat_argument_error'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:149:in `rescue in _perform'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:123:in `_perform'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:471:in `visit_variable'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `map'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/share/gems/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/share/gems/gems/sass-3.4.24/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: $color: 'color(\"materialize-red\", \"lighten-2\")' is not a color for `lighten'\A         on line 38 of _variables.scss\A         from line 1 of main.scss"; }

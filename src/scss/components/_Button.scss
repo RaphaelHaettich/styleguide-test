@@ -1,0 +1,46 @@
+// Buttons
+//
+// Various button styles.
+//
+// Markup: ../../../styleguide/build/html/button.html
+//
+// .cp-button--secondary - Secondary Button.
+// .cp-button--small - Small Button.
+// .cp-button--disabled - Button disabled.
+//
+// Styleguide Components.button
+
+.cp-button {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  margin-left: 10px;
+  padding: 0 20px;
+  background-color: $color-primary;
+  color: $color-white;
+  font-family: inherit;
+  font-size: ($base-font-size * 1.333);
+  font-weight: $font-semibold;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  
+  // Color Variants
+  &--secondary {
+	border: 1px solid $color-primary;
+	background-color: $color-transparent;
+	color: $color-primary;
+  }
+  
+  // Size Variants
+  &--small {
+	font-size: ($base-font-size * 0.875);
+	line-height: 2.2;
+	padding: 0 12px;
+  }
+  
+  &--disabled {
+	background: $color-grey;
+	cursor: not-allowed;
+  }
+}
