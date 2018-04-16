@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node-sass src/scss/main.scss -o build/css/ && node createHtml",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass src/scss/main.scss -o styleguide/build/css/",
-    "scss-watch": "node-sass -w src/scss/main.scss -o styleguide/build/css/"
+    "scss": "node-sass src/scss/main.scss -o build/css/",
+    "scss-watch": "node-sass -w src/scss/main.scss -o build/css/"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "filehound": "^1.16.2",
     "fs": "0.0.1-security",
     "libxslt": "^0.7.0",
-    "node-sass": "^4.8.3"
+    "markup-js": "^1.5.21",
+    "node-sass": "^4.8.3",
+    "path": "^0.12.7"
   }
 }

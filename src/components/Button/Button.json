@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "xsl": false,
+  "name": "Button",
+  "data": {
+    "title": "Button",
+    "description": "this a very nice button, it has 3 different styles"
+  }
+}

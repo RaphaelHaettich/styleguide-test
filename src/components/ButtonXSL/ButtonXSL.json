@@ -1,0 +1,15 @@
+{
+  "component": true,
+  "xsl": true,
+  "name": "ButtonXSL",
+  "variations": true,
+  "data": {
+    "modifiers": [
+      {"additionalClass": "cp-button--small", "submit": "true"},
+      {"additionalClass": "cp-button--secondary"},
+      {"additionalClass": "cp-button--disabled"}
+    ],
+    "title": "ButtonXSL",
+    "description": "this a very nice buttonXSL, it has 3 different styles"
+  }
+}
