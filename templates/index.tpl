@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>HTML5 boilerplate – all you really need…</title>
+    <title>Competec Styleguide</title>
     <link rel="stylesheet" href="css/material-components-web.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styleguide.css">
