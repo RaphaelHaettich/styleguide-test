@@ -21,6 +21,8 @@
 	padding: 20px;
 }
 
-.style-guide-component__title {
-	margin-top: 20px;
+.style-guide-component__title,
+.style-guide-component__html,
+.style-guide-component__description {
+	margin: 20px 0;
 }
