@@ -3,8 +3,6 @@
     <div class="style-guide-component__description">{{ data.description }}</div>
     <div class="style-guide-component__html">{{ data.html }}</div>
     <div class="style-guide-component__code">
-    <pre class="prettyprint">
-          {{ data.escapedHtml }}
-    </pre>
+    <pre class="prettyprint">{{ data.escapedHtml }}</pre>
     </div>
 </div>

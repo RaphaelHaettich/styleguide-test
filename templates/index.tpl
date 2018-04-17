@@ -34,7 +34,6 @@
 <script src="scripts/run_prettify_html.js"></script>
 <script>
     mdc.autoInit();
-    hljs.initHighlightingOnLoad();
 </script>
 </body>
 </html>
