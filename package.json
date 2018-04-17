@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass src/scss/main.scss -o build/css/",
     "scss-watch": "node-sass -w src/scss/main.scss -o build/css/",
-    "move-vendor": "cp node_modules/material-components-web/dist/material-components-web.min.css dist/css && cp node_modules/material-components-web/dist/material-components-web.js dist/scripts && cp src/vendor/run_prettify_html.js dist/scripts ",
+    "move-vendor": "cp node_modules/material-components-web/dist/material-components-web.min.css dist/css && cp node_modules/material-components-web/dist/material-components-web.js dist/scripts && cp src/scripts/vendor/run_prettify_html.js dist/scripts ",
     "move-css": "cp build/css/main.css dist/css"
   },
   "author": "",
