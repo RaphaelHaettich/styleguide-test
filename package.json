@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass src/scss/main.scss -o build/css/ && node createHtml",
+    "start": "npm run scss && npm run move-css && npm run move-vendor && npm run build-site",
+    "build-site": "node src/scripts/createHtml.js &&  node src/scripts/createStyleguide.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass src/scss/main.scss -o build/css/",
-    "scss-watch": "node-sass -w src/scss/main.scss -o build/css/"
+    "scss-watch": "node-sass -w src/scss/main.scss -o build/css/",
+    "move-vendor": "cp node_modules/material-components-web/dist/material-components-web.min.css dist/css && cp node_modules/material-components-web/dist/material-components-web.js dist/scripts && cp src/vendor/run_prettify_html.js dist/scripts ",
+    "move-css": "cp build/css/main.css dist/css"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +19,7 @@
     "fs": "0.0.1-security",
     "libxslt": "^0.7.0",
     "markup-js": "^1.5.21",
+    "material-components-web": "^0.34.1",
     "node-sass": "^4.8.3",
     "path": "^0.12.7"
   }

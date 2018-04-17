@@ -43,7 +43,7 @@ function loadWithXsl(context, filePath) {
 
         console.log("load with xsl and variations");
 
-        create(htmlString, context);
+        create(htmlString, context, stylesheetString);
 
 
     } else {
@@ -53,7 +53,7 @@ function loadWithXsl(context, filePath) {
 
         console.log("load with xsl and npo variations");
 
-        create(htmlString, context);
+        create(htmlString, context, stylesheetString);
     }
 
 }
@@ -66,23 +66,29 @@ function loadWithHtml(context, filePath) {
     create(htmlString, context);
 }
 
-function create(htmlString, context) {
+function create(htmlString, context, stylesheet) {
     if( context.component === true ) {
         console.log("component");
-        computeComponent(htmlString, context);
+        computeComponent(htmlString, context, stylesheet);
     } else {
         console.log("not a component");
     }
 }
 
-function computeComponent(htmlString, context) {
+function computeComponent(htmlString, context, stylesheet) {
     const componentTpl = fs.readFileSync('templates/component.tpl', 'utf8');
 
     context.data.html = htmlString;
+    console.log(stylesheet)
+    if(stylesheet) {
+        context.data.escapedHtml = stylesheet.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+    } else {
+        context.data.escapedHtml = htmlString.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+    }
 
     const result = Mark.up(componentTpl, context);
 
-    console.log(result);
+    // console.log(result);
 
     fs.writeFileSync("build/html/"+ context.name +".html", result, function(err) {
         if(err) {

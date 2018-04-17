@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 boilerplate – all you really need…</title>
+    <link rel="stylesheet" href="css/material-components-web.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+</head>
+</head>
+
+<body id="home">
+<header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <span class="mdc-top-app-bar__title">Competec Styleguide</span>
+        </section>
+    </div>
+</header>
+<div class="style-guide-content">
+        <nav class="mdc-drawer mdc-drawer--permanent mdc-typography">
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated" href="#">
+                    Buttons
+                </a>
+            </nav>
+        </nav>
+    <main class="style-guide-main">
+        <div class="style-guide-component-list">
+    <div class="style-guide-componentList__title mdc-typography--display3">Components</div>
+    <div class="style-guide-component">
+    <h2 class="style-guide-component__title mdc-typography--display1">Button</h2>
+    <div class="style-guide-component__description">this a very nice button, it has 3 different styles</div>
+    <div class="style-guide-component__html"><button class="cp-button">Standart Button</button>
+<button class="cp-button cp-button--secondary">Secondary Button</button>
+<button class="cp-button cp-button--small">Small Button</button>
+<button class="cp-button cp-button--disabled">Disabled Button</button>
+</div>
+    <div class="style-guide-component__code">
+    <pre class="prettyprint">
+          &lt;button class="cp-button"&gt;Standart Button&lt;/button&gt;
+&lt;button class="cp-button cp-button--secondary"&gt;Secondary Button&lt;/button&gt;
+&lt;button class="cp-button cp-button--small"&gt;Small Button&lt;/button&gt;
+&lt;button class="cp-button cp-button--disabled"&gt;Disabled Button&lt;/button&gt;
+
+    </pre>
+    </div>
+</div>
+<div class="style-guide-component">
+    <h2 class="style-guide-component__title mdc-typography--display1">ButtonXSL</h2>
+    <div class="style-guide-component__description">this a very nice buttonXSL, it has 3 different styles</div>
+    <div class="style-guide-component__html"><button class="cp-button cp-button--small" type="submit">
+            Button Element
+        </button>
+<button class="cp-button cp-button--secondary">
+            Button Element
+        </button>
+<button class="cp-button cp-button--disabled">
+            Button Element
+        </button>
+</div>
+    <div class="style-guide-component__code">
+    <pre class="prettyprint">
+          &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+    &lt;xsl:output method="html" indent="yes"/&gt;
+
+    &lt;xsl:param name="additionalClass"/&gt;
+    &lt;xsl:param name="submit"/&gt;
+
+    &lt;xsl:template match="*"&gt;
+        &lt;button&gt;
+            &lt;xsl:attribute name="class"&gt;cp-button &lt;xsl:value-of select="$additionalClass"/&gt;&lt;/xsl:attribute&gt;
+            &lt;xsl:if test="$submit"&gt;
+                &lt;xsl:attribute name="type"&gt;submit&lt;/xsl:attribute&gt;
+            &lt;/xsl:if&gt;
+            Button Element
+        &lt;/button&gt;
+    &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+
+    </pre>
+    </div>
+</div>
+
+</div>
+
+    </main>
+</div>
+
+<script src="scripts/material-components-web.js"></script>
+<script src="scripts/run_prettify_html.js"></script>
+<script>
+    mdc.autoInit();
+    hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
