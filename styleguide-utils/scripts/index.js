@@ -1,5 +1,10 @@
 const createHtml = require('./modules/createHtml');
+const createStyleguide = require('./modules/createStyleguide');
 
 const source = 'src/components';
 
-createHtml(source);
+const successfulSaved = createHtml(source);
+
+if(successfulSaved) {
+    createStyleguide();
+}

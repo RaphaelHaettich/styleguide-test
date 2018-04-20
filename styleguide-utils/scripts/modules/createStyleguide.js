@@ -3,8 +3,6 @@ const Mark = require('markup-js');
 const path = require('path');
 const FileHound = require('filehound');
 
-getCompnentFilesToString();
-
 function getCompnentFilesToString() {
     const source = 'build/html/';
     const dirPath = path.join(process.cwd(),source);
@@ -55,3 +53,5 @@ function createIndex(componentList) {
         console.log("The file was saved!");
     });
 }
+
+module.exports = getCompnentFilesToString;
