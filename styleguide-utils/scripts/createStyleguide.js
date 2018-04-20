@@ -24,7 +24,7 @@ function getCompnentFilesToString() {
 }
 
 function createComponentList(components) {
-    const componentListTpl = fs.readFileSync('templates/componentList.tpl', 'utf8');
+    const componentListTpl = fs.readFileSync('styleguide-utils/templates/componentList.tpl', 'utf8');
 
     const context = {
         title: 'Components',
@@ -38,7 +38,7 @@ function createComponentList(components) {
 }
 
 function createIndex(componentList) {
-    const indexTpl = fs.readFileSync('templates/index.tpl', 'utf8');
+    const indexTpl = fs.readFileSync('styleguide-utils/templates/index.tpl', 'utf8');
 
     const context = {
         name: 'index',

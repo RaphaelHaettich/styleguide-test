@@ -26,3 +26,8 @@
 .style-guide-component__description {
 	margin: 20px 0;
 }
+
+.style-guide-component {
+	padding: 10px;
+	margin: 10px 0 0;
+}

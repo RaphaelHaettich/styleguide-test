@@ -76,7 +76,7 @@ function create(htmlString, context, stylesheet) {
 }
 
 function computeComponent(htmlString, context, stylesheet) {
-    const componentTpl = fs.readFileSync('templates/component.tpl', 'utf8');
+    const componentTpl = fs.readFileSync('styleguide-utils/templates/component.tpl', 'utf8');
 
     context.data.html = htmlString;
 
