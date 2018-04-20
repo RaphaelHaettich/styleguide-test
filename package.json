@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run create-folders && npm run scss && npm run move-css && npm run move-vendor && npm run build-site",
-    "build-site": "node styleguide-utils/scripts/createHtml.js &&  node styleguide-utils/scripts/createStyleguide.js",
+    "build-site": "node styleguide-utils/scripts/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass src/scss/main.scss -o build/css/",
     "scss-watch": "node-sass -w src/scss/main.scss -o build/css/",
