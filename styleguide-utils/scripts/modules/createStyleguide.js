@@ -14,9 +14,8 @@ function getCompnentFilesToString() {
 
     let components = "";
 
-    for (let i = 0; i < files.length; i++) {
-        const componentHtml = fs.readFileSync(files[i], 'utf8');
-        components += componentHtml;
+    for (const file of files) {
+        components += fs.readFileSync(file, 'utf8');
     }
     createComponentList(components);
 }
@@ -45,7 +44,7 @@ function createIndex(componentList) {
 
     const index = Mark.up(indexTpl, context);
 
-    fs.writeFileSync("dist/"+ context.name +".html", index, function(err) {
+    fs.writeFileSync(`dist/${context.name}.html`, index, function(err) {
         if(err) {
             return console.log(err);
         }
